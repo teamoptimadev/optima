@@ -11,7 +11,7 @@ const contributors = [
     {
         name: "Mohan A",
         role: "UI/UX Designer",
-        image: "https://i.pravatar.cc/150?u=alex",
+        image: "nothing",
         socials: {
             github: "#",
             twitter: "#",
@@ -31,27 +31,27 @@ const contributors = [
         }
     },
     {
-        name: "Michael Chen",
+        name: "Manoj Kumar B M",
         role: "Backend Engineer",
-        image: "https://i.pravatar.cc/150?u=michael",
+        image: "nothing",
         socials: {
             github: "#",
             linkedin: "#"
         }
     },
     {
-        name: "Emily Davis",
+        name: "Dilip D",
         role: "Project Manager",
-        image: "https://i.pravatar.cc/150?u=emily",
+        image: "nothing",
         socials: {
             twitter: "#",
             linkedin: "#"
         }
     },
     {
-        name: "David Wilson",
+        name: "Deepak G",
         role: "DevOps Engineer",
-        image: "https://i.pravatar.cc/150?u=david",
+        image: "nothing",
         socials: {
             github: "#",
             linkedin: "#"
