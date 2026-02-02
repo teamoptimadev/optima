@@ -73,14 +73,11 @@ export default function NavBar() {
                             <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <ul className="w-96">
-                                    <ListItem href="/docs" title="Introduction">
+                                    <ListItem href="/blog" title="Introduction">
                                         Re-usable components built with Tailwind CSS.
                                     </ListItem>
-                                    <ListItem href="/docs/installation" title="Installation">
-                                        How to install dependencies and structure your app.
-                                    </ListItem>
-                                    <ListItem href="/docs/primitives/typography" title="Typography">
-                                        Styles for headings, paragraphs, lists...etc
+                                    <ListItem href="/blog/welcome" title="Welcome">
+                                        Welcome to our blog.
                                     </ListItem>
                                 </ul>
                             </NavigationMenuContent>
@@ -108,7 +105,7 @@ export default function NavBar() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()} asChild>
-                                <Link href="/docs">Docs</Link>
+                                <Link href="/blog">Blog</Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                     </NavigationMenuList>

@@ -2,6 +2,7 @@ import FAQ from "@/components/faq";
 import Image from "next/image";
 import { GithubProjects } from "@/components/github-projects";
 import DitherShader from "@/components/ui/dither-shader";
+import { Contributors } from "@/components/contributors";
 
 export default function Home() {
   return (
@@ -49,6 +50,13 @@ export default function Home() {
         <p className=" text-center text-muted-foreground max-w-2xl mx-auto mt-2">Explore our projects and see how we use technology to solve real-world problems.</p>
         <GithubProjects />
       </section>
+
+      <section id="contributors" className="py-10 my-10">
+        <h1 className="text-3xl font-bold flex justify-center items-center text-center">Contributors</h1>
+        <p className=" text-center text-muted-foreground max-w-2xl mx-auto mt-2 mb-8">Explore our contributions and see how we use technology to solve real-world problems.</p>
+        <Contributors />
+      </section>
+
       <section id="faq" className="flex items-center flex-col my-10">
         <h1 className="text-3xl text-center font-bold flex max-w-xl items-center mb-6">Frequently Asked Questions</h1>
         <div className="flex justify-center items-center w-full max-w-3xl">

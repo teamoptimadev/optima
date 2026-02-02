@@ -11,7 +11,8 @@ export default function BlogPage() {
 
   return (
     <section className="container mx-auto px-4 py-8">
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Blog</h1>
+      <h1 className="font-semibold text-2xl mb-2 tracking-tighter">Blog</h1>
+      <p className="text-muted-foreground mb-8">Read our latest thoughts and updates.</p>
       {allBlogs
         .sort((a, b) => {
           if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
@@ -26,7 +27,7 @@ export default function BlogPage() {
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
-              <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
+              <p className="text-neutral-600 dark:text-neutral-400 w-[120px] tabular-nums">
                 {post.metadata.publishedAt}
               </p>
               <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
