@@ -54,6 +54,8 @@ export default function Footer() {
                             <img
                                 src="/optima_logo.jpeg"
                                 alt="Team Optima Logo"
+                                width={32}
+                                height={32}
                                 className="rounded-md object-cover"
                             />
                             <span className="font-bold text-lg">Team Optima</span>
