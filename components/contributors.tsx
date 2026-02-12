@@ -6,8 +6,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Github, Linkedin, Twitter, User } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
+import { Contributor } from "@/types";
 
-const contributors = [
+const contributors: Contributor[] = [
     {
         name: "Mohan A",
         role: "UI/UX Designer",
@@ -36,7 +37,9 @@ const contributors = [
         image: "nothing",
         socials: {
             github: "#",
-            linkedin: "#"
+            linkedin: "#",
+            personal: "#",
+            twitter: "#"
         }
     },
     {
@@ -45,7 +48,9 @@ const contributors = [
         image: "nothing",
         socials: {
             twitter: "#",
-            linkedin: "#"
+            linkedin: "#",
+            personal: "#",
+            github: "#"
         }
     },
     {
@@ -54,7 +59,9 @@ const contributors = [
         image: "nothing",
         socials: {
             github: "#",
-            linkedin: "#"
+            linkedin: "#",
+            personal: "#",
+            twitter: "#"
         }
     },
     {
@@ -63,7 +70,9 @@ const contributors = [
         image: "https://i.pravatar.cc/150?u=jessica",
         socials: {
             github: "#",
-            twitter: "#"
+            twitter: "#",
+            linkedin: "#",
+            personal: "#"
         }
     },
     {
@@ -73,7 +82,8 @@ const contributors = [
         socials: {
             github: "#",
             twitter: "#",
-            linkedin: "#"
+            linkedin: "#",
+            personal: "#"
         }
     },
     {
