@@ -59,11 +59,16 @@ export default function NavBar() {
             <div className="flex items-center gap-6">
 
                 <Link href="/" className="flex items-center gap-2">
-                    <Image
+                    {/* <Image
                         src="/optima_logo.jpeg"
                         alt="Team Optima Logo"
                         width={40}
                         height={40}
+                        className="rounded-md object-cover"
+                    /> */}
+                    <img
+                        src="/optima_logo.jpeg"
+                        alt="Team Optima Logo"
                         className="rounded-md object-cover"
                     />
                 </Link>

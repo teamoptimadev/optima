@@ -44,11 +44,16 @@ export default function Footer() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 md:mb-12">
                     <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
                         <Link href="/" className="flex items-center gap-2">
-                            <Image
+                            {/* <Image
                                 src="/optima_logo.jpeg"
                                 alt="Team Optima Logo"
                                 width={32}
                                 height={32}
+                                className="rounded-md object-cover"
+                            /> */}
+                            <img
+                                src="/optima_logo.jpeg"
+                                alt="Team Optima Logo"
                                 className="rounded-md object-cover"
                             />
                             <span className="font-bold text-lg">Team Optima</span>

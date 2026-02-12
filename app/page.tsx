@@ -29,12 +29,17 @@ export default function Home() {
             colorMode="grayscale"
             className="w-full h-full object-cover"
           />
-          <Image
+          {/* <Image
             src="/optima_logo.jpeg"
             alt="Optima Logo"
             className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             width={1000}
             height={1000}
+          /> */}
+          <img
+            src="/optima_logo.jpeg"
+            alt="Optima Logo"
+            className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           />
         </div>
       </section>
