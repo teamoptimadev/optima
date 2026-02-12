@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import Image from "next/image"
 import { ModeToggle } from "./mode-toggle"
+import ScrollBaseAnimation from "./ui/scroll-text-marque"
 
 function ThemeToggle() {
     const { setTheme, theme } = useTheme()
@@ -89,6 +90,16 @@ export default function Footer() {
                     </div>
                 </div>
 
+                <div className="bg-primary/5 backdrop-blur-2xl rounded-md">
+                    <ScrollBaseAnimation
+                        delay={500}
+                        baseVelocity={-3}
+                        clasname='font-bold tracking-[-0.07em] px-2 bg-gradient-to-b from-primary to-primary-foreground bg-clip-text text-transparent'
+                    >
+                        Team Optima
+                    </ScrollBaseAnimation>
+                </div>
+
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t">
                     <p className="text-sm text-muted-foreground">
                         © {new Date().getFullYear()} Team Optima, Inc. All rights reserved.
@@ -98,6 +109,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }

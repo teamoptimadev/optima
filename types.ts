@@ -1,8 +1,8 @@
 export interface Socials {
-    github: string;
-    twitter: string;
-    linkedin: string;
-    personal: string;
+    github?: string;
+    twitter?: string;
+    linkedin?: string;
+    personal?: string;
 }
 
 export interface Contributor {

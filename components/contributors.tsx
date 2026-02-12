@@ -7,6 +7,7 @@ import { Github, Linkedin, Twitter, User } from "lucide-react";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { Contributor } from "@/types";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
 
 const contributors: Contributor[] = [
     {
@@ -14,9 +15,8 @@ const contributors: Contributor[] = [
         role: "UI/UX Designer",
         image: "nothing",
         socials: {
-            github: "#",
-            twitter: "#",
-            linkedin: "#",
+            github: "https://github.com/Mohandev2004",
+            linkedin: "https://www.linkedin.com/in/mohandev",
             personal: "https://mohan-a.me"
         }
     },
@@ -36,56 +36,53 @@ const contributors: Contributor[] = [
         role: "Backend Engineer",
         image: "nothing",
         socials: {
-            github: "#",
-            linkedin: "#",
-            personal: "#",
-            twitter: "#"
+            linkedin: "https://www.linkedin.com/in/manojkumarbm/",
         }
     },
-    {
-        name: "Dilip D",
-        role: "Project Manager",
-        image: "nothing",
-        socials: {
-            twitter: "#",
-            linkedin: "#",
-            personal: "#",
-            github: "#"
-        }
-    },
-    {
-        name: "Deepak G",
-        role: "DevOps Engineer",
-        image: "nothing",
-        socials: {
-            github: "#",
-            linkedin: "#",
-            personal: "#",
-            twitter: "#"
-        }
-    },
-    {
-        name: "Jessica Taylor",
-        role: "Frontend Developer",
-        image: "https://i.pravatar.cc/150?u=jessica",
-        socials: {
-            github: "#",
-            twitter: "#",
-            linkedin: "#",
-            personal: "#"
-        }
-    },
-    {
-        name: "Robert Brown",
-        role: "Full Stack Developer",
-        image: "https://i.pravatar.cc/150?u=robert",
-        socials: {
-            github: "#",
-            twitter: "#",
-            linkedin: "#",
-            personal: "#"
-        }
-    },
+    // {
+    //     name: "Dilip D",
+    //     role: "Project Manager",
+    //     image: "nothing",
+    //     socials: {
+    //         twitter: "#",
+    //         linkedin: "#",
+    //         personal: "#",
+    //         github: "#"
+    //     }
+    // },
+    // {
+    //     name: "Deepak G",
+    //     role: "DevOps Engineer",
+    //     image: "nothing",
+    //     socials: {
+    //         github: "#",
+    //         linkedin: "#",
+    //         personal: "#",
+    //         twitter: "#"
+    //     }
+    // },
+    // {
+    //     name: "Taylor",
+    //     role: "Frontend Developer",
+    //     image: "https://i.pravatar.cc/150?u=taylor",
+    //     socials: {
+    //         github: "#",
+    //         twitter: "#",
+    //         linkedin: "#",
+    //         personal: "#"
+    //     }
+    // },
+    // {
+    //     name: "Robert Brown",
+    //     role: "Full Stack Developer",
+    //     image: "https://i.pravatar.cc/150?u=robert",
+    //     socials: {
+    //         github: "#",
+    //         twitter: "#",
+    //         linkedin: "#",
+    //         personal: "#"
+    //     }
+    // },
     {
         name: "Kishore",
         role: "Full Stack Developer",
@@ -126,33 +123,62 @@ export function Contributors() {
 
                                 <div className="flex items-center gap-2 mt-2">
                                     {contributor.socials.github && (
-                                        <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
-                                            <Link href={contributor.socials.github} target="_blank" rel="noopener noreferrer">
-                                                <Github size={16} />
-                                            </Link>
-                                        </Button>
+                                        <Tooltip>
+                                            <TooltipTrigger>
+                                                <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
+                                                    <Link href={contributor.socials.github} target="_blank" rel="noopener noreferrer">
+                                                        <Github size={16} />
+                                                    </Link>
+                                                </Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>GitHub</p>
+                                            </TooltipContent>
+                                        </Tooltip>
                                     )}
                                     {contributor.socials.twitter && (
-                                        <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
-                                            <Link href={contributor.socials.twitter} target="_blank" rel="noopener noreferrer">
-                                                <Twitter size={16} />
-                                            </Link>
-                                        </Button>
+                                        <Tooltip>
+                                            <TooltipTrigger>
+                                                <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
+                                                    <Link href={contributor.socials.twitter} target="_blank" rel="noopener noreferrer">
+                                                        <Twitter size={16} />
+                                                    </Link>
+                                                </Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Twitter</p>
+                                            </TooltipContent>
+                                        </Tooltip>
                                     )}
                                     {contributor.socials.linkedin && (
-                                        <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
-                                            <Link href={contributor.socials.linkedin} target="_blank" rel="noopener noreferrer">
-                                                <Linkedin size={16} />
-                                            </Link>
-                                        </Button>
+
+                                        <Tooltip>
+                                            <TooltipTrigger>
+                                                <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
+                                                    <Link href={contributor.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                                                        <Linkedin size={16} />
+                                                    </Link>
+                                                </Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>LinkedIn</p>
+                                            </TooltipContent>
+                                        </Tooltip>
                                     )}
 
                                     {contributor.socials.personal && (
-                                        <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
-                                            <Link href={contributor.socials.personal} target="_blank" rel="noopener noreferrer">
-                                                <User size={16} />
-                                            </Link>
-                                        </Button>
+                                        <Tooltip>
+                                            <TooltipTrigger>
+                                                <Button variant="ghost" size="icon" className="size-8 rounded-full hover:bg-primary/10 hover:text-primary transition-colors" asChild>
+                                                    <Link href={contributor.socials.personal} target="_blank" rel="noopener noreferrer">
+                                                        <User size={16} />
+                                                    </Link>
+                                                </Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Portfolio</p>
+                                            </TooltipContent>
+                                        </Tooltip>
                                     )}
                                 </div>
                             </CardContent>
@@ -160,6 +186,6 @@ export function Contributors() {
                     </motion.div>
                 ))}
             </div>
-        </div>
+        </div >
     );
 }

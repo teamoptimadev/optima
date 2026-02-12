@@ -23,7 +23,7 @@ export default function BlogPage() {
         .map((post) => (
           <Link
             key={post.slug}
-            className="flex flex-col space-y-1 mb-4"
+            className="flex flex-col space-y-1 mb-4 hover:bg-primary px-2 transition-all ease-in-out rounded-md min-h-10 justify-center"
             href={`/blog/${post.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
