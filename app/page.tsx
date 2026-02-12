@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className="group size-100 bg-background border border-border hover:scale-101 transition-all duration-300 cursor-pointer overflow-hidden rounded-xl shadow-2xl relative">
           <DitherShader
-            src="/optima_logo.jpeg"
+            src="https://avatars.githubusercontent.com/u/233457718?s=200&v=4"
             gridSize={4}
             ditherMode="bayer"
             colorMode="grayscale"
@@ -37,7 +37,7 @@ export default function Home() {
             height={1000}
           /> */}
           <img
-            src="/optima_logo.jpeg"
+            src="https://avatars.githubusercontent.com/u/233457718?s=200&v=4"
             alt="Optima Logo"
             className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           />

@@ -67,7 +67,7 @@ export default function NavBar() {
                         className="rounded-md object-cover"
                     /> */}
                     <img
-                        src="/optima_logo.jpeg"
+                        src="https://avatars.githubusercontent.com/u/233457718?s=200&v=4"
                         alt="Team Optima Logo"
                         width={40}
                         height={40}
